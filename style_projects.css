@@ -1,0 +1,127 @@
+/* Universal styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 97%;
+    z-index: 100;
+
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .logo:hover {
+    color: #00ccff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ccff;
+}
+
+/* Project Wrapper */
+#project_wrapper {
+    display: flex;             /* Use Flexbox */
+    width: 100%;
+    padding-top: 120px;        /* Adjust to prevent overlap with the nav */
+}
+
+/* Project Slider (Left Column) */
+#project_slider {
+    width: 30%;                /* Left side takes up 25% */
+    min-height: 100px;         /* Ensure height for visual space */
+    background-color: black;
+    padding: 20px;
+}
+
+.custom-button-container {
+    display: flex;
+    flex-direction: column;     /* Stack buttons vertically */
+    gap: 10px;      
+    padding-left: 20px;         
+}
+
+.custom-button {
+    width: 300px;                /* Make buttons full width */
+    padding: 30px;
+    font-size: 18px;
+    background-color: dimgray;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: gray;
+    color: #00ccff;
+}
+
+/* Project Content (Right Column) */
+#project_content {
+    flex-grow: 1;               /* Right side takes up remaining space */
+    background-color: dark;
+    padding-right: 20px;
+    padding-left: 20px;
+    min-height: 100px;          /* Ensure it has visual height */
+    box-sizing: border-box;      /* Make sure padding doesn't affect width */
+}
+
+.text-container {
+    width: 100%;
+}
+
+.image_container {
+    text-align: center;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #aaa;
+}
+
+.social_media_links {
+    text-align: center;
+}

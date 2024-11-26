@@ -1,0 +1,134 @@
+/* Universal styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    padding-top: 60px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+P {
+    padding: 20px 20px
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 97%;
+    z-index: 100;
+
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {    
+    color: #00ccff;
+}
+
+#industrial_automation {
+    width: 100%;
+    height: 700px;
+    background-color: gray;
+    padding-top: 90px;
+}
+
+
+#electrical_works {
+    margin-top: 20px;
+    width: 98%;
+    height: 750px;
+    background-color: gray;
+}
+
+#engineering_consulting {
+    margin-top: 20px ;
+    width: 100%;
+    height: 750px;
+    background-color: green;
+}
+
+.photo {
+    width: 45%;
+    height: 100%;
+    float: left; /* Aligns the container to the right */
+    background-image: url('scada_image.jpg'); /* Use url() for the background image */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+}
+
+.description {
+    width: 55%;
+    height: 100%;
+    float: right; /* Aligns the container to the right */
+    background-color: gray;
+}
+
+.photo_01 {
+    width: 45%;
+    height: 100%;
+    float: right; /* Aligns the container to the right */
+    background-image: url('electrical_engineering.jpg'); /* Use url() for the background image */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: left; /* Center the background image */
+}
+
+.description_01 {
+    width: 55%;
+    height: 100%;
+    float: left; /* Aligns the container to the right */
+    background-color: grey;
+}
+
+.photo_02 {
+    width: 45%;
+    height: 100%;
+    float: left; /* Aligns the container to the right */
+    background-image: url('consultancy.jpg');
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #aaa;
+}
+
+.social_media_links{
+    text-align: middle;
+}

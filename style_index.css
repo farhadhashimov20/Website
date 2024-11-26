@@ -1,0 +1,193 @@
+/* Universal styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 97%;
+    z-index: 100;
+
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ccff;
+}
+
+.latest_project_img_01{
+     width: 100%;
+     height: auto;
+     display: block;
+}
+
+.latest_project_img_02{
+     width: 100%;
+     height: auto;
+     display: block;
+}
+
+.latest_project_img_03{
+     width: 100%;
+     height: auto;
+     display: block;
+}
+
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url("background/gg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #00ccff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0099cc;
+}
+
+/* Mission Section */
+#missions {
+    padding: 10px 0px;
+    background-color: #111;
+}
+
+.missions-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text_overlay_01 {
+    position: absolute; /* Position the text relative to the container */
+    top: 180%; /* Center vertically */
+    left: 20%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the positioning from the center */
+    color: white; /* White text to contrast against the image */
+    font-size: 22px; /* Adjust the font size */
+    font-weight: bold;
+    text-align: left; /* Center text inside the container */
+}
+
+.text_overlay_02 {
+    position: absolute; /* Position the text relative to the container */
+    top: 280%; /* Center vertically */
+    left: 24%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the positioning from the center */
+    color: white; /* White text to contrast against the image */
+    font-size: 22px; /* Adjust the font size */
+    font-weight: bold;
+    text-align: left; /* Center text inside the container */
+}
+
+.text_overlay_03 {
+    position: absolute; /* Position the text relative to the container */
+    top: 380%; /* Center vertically */
+    left: 24%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the positioning from the center */
+    color: white; /* White text to contrast against the image */
+    font-size: 22px; /* Adjust the font size */
+    font-weight: bold;
+    text-align: left; /* Center text inside the container */
+}
+
+.cta-btn_01 {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white; /* Border color and size */
+    
+  
+}
+
+.cta-btn_01:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #aaa;
+}
+
+.social_media_links{
+    text-align: middle;
+}

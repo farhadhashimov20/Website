@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91K1HT5Q82"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+     gtag('config', 'G-91K1HT5Q82');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="style_blog_id.css">
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Farhad Hashimov</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../products.html">Products</a></li>
+            <li><a href="../projects/project_01.html">Projects</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Content Section -->
+    <div class="content-wrapper">   
+        <div class="blog-content">
+            <h1>Modbus Protokolu</h1>
+            <p>Modbus deyək, digərləri sussun. Kommunikasiya yöntəmləri arasında 50 ilə yaxın tarixi olsada lider yerdədir. Kiçikdən böyüyə bir çox şirkətin bu protokolu dəstəkləyən cihaz istehsal etməsi ilə özünə yer qazanan Modbus Azərbaycanda geniş tətbiq sahəsinə sahibdir.<br><br>
+
+            Modbusı birləşmə tiplərinə görə RS-232, RS-485, RS-422 və ya protokol növünə görə RTU, TCP, ASCII və ya TCP üzərindən RTU kimi növlərə bölmək olar.<br><br>
+
+            RS-232'də 3 kabelli (jila sözünün tərcüməsini bilmirəm) COM (Rx, Tx, GND) RS-485'də isə 2 kabelli (A, B) kabel istifadə olunur. TCP protokolu isə RJ-45 tipli başlıq və ethernet kabeli ilə istifadə olunur.<br><br>
+            </p>
+            <img src="../blog_imgs/1721299687412.jpg" alt="Latest Blog 1">
+            <p>
+            İşin ən maraqlı hissəsi isə baudrate, parity və adresləmələrdir ki Modbus ilə yeni-yeni tanış olan mühəndislər bunu xatırlayacaq. RS-232'də sadəcə bir master bir ədəd slave olduğundan adresləmə prosesi o qədərdə qəliz deyl. RS-485'də isə bütün adreslər 255'ə qədər hər bir cihaza xas fərqli-fərqli verilməlidir. Bir çox cihazda baudrate fix 9600 ilə gəlir. Parity məsələsində isə diqqət yetirib even-even, odd-odd, zero-zero olacaq formada ayarlamaq lazımdır. Bunlar bəzəndə rəqəm olaraq verilir.<br><br>
+
+            Kiçik və önəmli xatırlatma: RS-232 kabelində Rx-Tx, Tx-Rx bağlanmalıdır. Uzun-uzun bu niyə işləmir axı sədaları altında overtime'a qalıb payalnik istisindən və qalay iyindən bihuş olmamaq üçün sonuncu xatırlatmaya diqqət.<br>
+            </p>
+            <!-- Next and Previous Buttons -->
+            <div class="pagination">
+                <button class="btn prev" onclick="navigateToPrevious()">Previous Blog</button>
+                <button class="btn next" onclick="navigateToNext()">Next Blog</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Farhad Hashimov</p>
+        <div class="social_media_links">
+            <a href="https://www.linkedin.com/in/farhad-hashimov-2b37a8217/" target="_blank">
+                <img src="../linkedin.png" alt="LinkedIn" style="width: auto; height: auto; max-width: 30px;">
+            </a>
+            <a href="https://www.instagram.com/iamfrhd//" target="_blank">
+                <img src="../instagram.png" alt="Instagram" style="width: auto; height: auto; max-width: 25px;">
+            </a>    
+        </div>
+    </footer>
+    
+    <script>
+        // Navigation functions for the buttons
+        function navigateToPrevious() {
+            window.location.href = "blog_id_07.html";
+        }
+
+        function navigateToNext() {
+            window.location.href = "blog_id_09.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91K1HT5Q82"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+     gtag('config', 'G-91K1HT5Q82');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="style_blog_id.css">
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Farhad Hashimov</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../products.html">Products</a></li>
+            <li><a href="../projects/project_01.html">Projects</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Content Section -->
+    <div class="content-wrapper">   
+        <div class="blog-content">
+            <h1>Design and SCADA – Perfection or Waste of Time?</h1>
+            <p>SCADA systems are all about simplicity, integrity, and functionality. But does that mean design is just a waste of time?<br><br>
+
+               Many automation engineers rely on libraries or generic symbols, which saves time but leads to SCADA screens that look alike and lack visual clarity. Recently, I saw a heat exchanger on a SCADA display represented by just a square.<br><br>
+
+               Here are two designs I created in under 15 minutes (see image). Simple, clear, and they do the job better! So, should we spend a little extra time on SCADA design, or stick with the basics?<br><br>
+
+               What do you think—worth the effort or not?<br><br>
+
+               #scada #automation #design<br><br>
+            </p>
+            <img src="../blog_imgs/1731139408641.jpg" alt="Latest Blog 1">
+            <!-- Next and Previous Buttons -->
+            <div class="pagination">
+                <button class="btn prev" onclick="navigateToPrevious()">Previous Blog</button>
+                <button class="btn next" onclick="navigateToNext()">Next Blog</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Farhad Hashimov</p>
+        <div class="social_media_links">
+            <a href="https://www.linkedin.com/in/farhad-hashimov-2b37a8217/" target="_blank">
+                <img src="../linkedin.png" alt="LinkedIn" style="width: auto; height: auto; max-width: 30px;">
+            </a>
+            <a href="https://www.instagram.com/iamfrhd//" target="_blank">
+                <img src="../instagram.png" alt="Instagram" style="width: auto; height: auto; max-width: 25px;">
+            </a>    
+        </div>
+    </footer>
+
+    <script>
+        // Navigation functions for the buttons
+        function navigateToPrevious() {
+            window.location.href = "blog_id_04.html";
+        }
+
+        function navigateToNext() {
+            window.location.href = "blog_id_06.html";
+        }
+    </script>
+</body>
+</html>

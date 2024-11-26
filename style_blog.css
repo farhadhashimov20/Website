@@ -1,0 +1,144 @@
+/* Reset Styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Body and Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.blog-section {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+/* Main Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ccff;
+}
+
+/* Blog Topics Navigation */
+.blog-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #666;
+}
+
+/* Latest Blogs Section */
+.latest-blogs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 500px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.blog-window {
+    width: 90%;
+    max-width: 500px;
+    height: 500px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-window:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.blog-window img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.blog-window p {
+    text-align: justify;
+}
+
+.blog-window a {
+    align-items: flex-end;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .blog-window {
+        width: 100%;
+    }
+
+    .blog-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

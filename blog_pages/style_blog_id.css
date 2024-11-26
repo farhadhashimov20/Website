@@ -1,0 +1,130 @@
+/* Reset Styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Body and Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Main Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ccff;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px; /* To avoid overlapping with the navbar */
+    padding: 20px;
+    min-height: 70vh;
+}
+
+/* Blog Content */
+.blog-content {
+    width: 60%; /* Adjust width to leave space for ads */
+    max-width: 800px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.blog-content h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.blog-content p {
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.blog-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Pagination Buttons */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-content {
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
